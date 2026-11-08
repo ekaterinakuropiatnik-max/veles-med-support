@@ -65,3 +65,15 @@ body{font-family:Inter,Arial,sans-serif}button,input,select,textarea{font-family
 .dialog-close{position:absolute;right:18px;top:18px;width:38px;height:38px;display:grid;place-items:center;border:0;border-radius:50%;background:#f1f5f1;color:#47614e;transition:background .25s,color .25s,transform .25s}
 .dialog-close:hover,.dialog-close:focus-visible{background:#e0ebe2;color:#036a31;transform:scale(1.06)}
 @media(max-width:520px){.dialog-close{right:14px;top:14px}}
+
+.site-menu .menu-login-prompt{padding:5px 4px 4px}
+.site-menu .menu-login-prompt p{margin:4px 7px 15px;color:#5e7364;line-height:1.7}
+.site-menu .menu-login-button{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;border:0;border-radius:12px;background:linear-gradient(135deg,#0b8444,#036a31);color:white;font-size:11px;font-weight:600;box-shadow:0 7px 17px #036a3125}
+.site-menu .menu-login-button:hover,.site-menu .menu-login-button:focus-visible{background:linear-gradient(135deg,#159451,#04713a);color:white;transform:translateY(-2px);box-shadow:0 10px 22px #036a3130}
+@media(max-width:760px){
+ .brand .brand-art img{animation:logo-mobile-lustre 4s ease-in-out infinite}
+ .brand-art::before{background:linear-gradient(120deg,transparent 23%,#c1f6dc9c 42%,#ffffffeb 50%,#a9def0a3 57%,transparent 74%);animation-duration:4.6s}
+ .brand-reflection{background:linear-gradient(110deg,transparent 35%,#ffffff36 43%,#ffffffe6 49%,#ffffff 51%,#ffffffab 56%,transparent 65%);animation-duration:3.2s}
+}
+@keyframes logo-mobile-lustre{0%,100%{filter:brightness(1) saturate(1)}50%{filter:brightness(1.2) saturate(1.22) contrast(1.04)}}
+@media(prefers-reduced-motion:reduce){.brand .brand-art img,.brand-art::before,.brand-reflection{animation:none!important}}
