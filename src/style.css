@@ -122,3 +122,11 @@ input:focus,select:focus,textarea:focus{border-color:#7398a5;box-shadow:0 0 0 4p
 .request-contact-fields{border-bottom:1px solid #e5edef;padding-bottom:22px;margin-bottom:25px}
 .request-contact-fields h3{font-size:14px;font-weight:600;color:#405b67;margin:2px 0 20px}
 .request-contact-fields input{width:100%}
+/* The WhatsApp contact is the one bright brand action. */
+header{height:136px}.brand{width:130px;height:130px}.brand-art{height:122px}
+.direct-contact>a[href^="https://wa.me/"]{background:#25d366;border-color:#25d366;color:#083c25;box-shadow:0 8px 20px #25d36622}
+.direct-contact>a[href^="https://wa.me/"] .contact-icon{background:#075e54;color:#fff}
+.direct-contact>a[href^="https://wa.me/"] small{color:#14583a}
+.direct-contact>a[href^="https://wa.me/"] .contact-arrow{color:#075e54}
+.direct-contact>a[href^="https://wa.me/"]:hover,.direct-contact>a[href^="https://wa.me/"]:focus-visible{background:#1fc85f;border-color:#1fc85f;color:#063d23;box-shadow:0 13px 27px #1fc85f4a;transform:translateY(-3px)}
+@media(max-width:760px){header{height:118px}.brand{width:108px;height:112px}.brand-art{height:102px}}
