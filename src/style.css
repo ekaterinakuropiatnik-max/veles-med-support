@@ -122,11 +122,17 @@ input:focus,select:focus,textarea:focus{border-color:#7398a5;box-shadow:0 0 0 4p
 .request-contact-fields{border-bottom:1px solid #e5edef;padding-bottom:22px;margin-bottom:25px}
 .request-contact-fields h3{font-size:14px;font-weight:600;color:#405b67;margin:2px 0 20px}
 .request-contact-fields input{width:100%}
-/* The WhatsApp contact is the one bright brand action. */
 header{height:136px}.brand{width:130px;height:130px}.brand-art{height:122px}
-.direct-contact>a[href^="https://wa.me/"]{background:#25d366;border-color:#25d366;color:#083c25;box-shadow:0 8px 20px #25d36622}
-.direct-contact>a[href^="https://wa.me/"] .contact-icon{background:#075e54;color:#fff}
-.direct-contact>a[href^="https://wa.me/"] small{color:#14583a}
-.direct-contact>a[href^="https://wa.me/"] .contact-arrow{color:#075e54}
-.direct-contact>a[href^="https://wa.me/"]:hover,.direct-contact>a[href^="https://wa.me/"]:focus-visible{background:#1fc85f;border-color:#1fc85f;color:#063d23;box-shadow:0 13px 27px #1fc85f4a;transform:translateY(-3px)}
+.direct-contact>a.whatsapp-app{display:block;overflow:hidden;padding:0;background:#e8f3eb;border:1px solid #cfe7d6;border-radius:22px;color:#173d2b;box-shadow:0 9px 26px #075e5416;animation:whatsapp-breathe 3.8s ease-in-out infinite}
+.whatsapp-app-header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 18px;background:#075e54;color:#fff}
+.whatsapp-app-title{font-size:15px;letter-spacing:-.3px;font-weight:700}
+.whatsapp-app-number{font-size:10px;letter-spacing:.2px;opacity:.86;white-space:nowrap}
+.whatsapp-app-body{display:flex;flex-direction:column;gap:12px;padding:15px 16px 16px;background:radial-gradient(circle at 10px 10px,#cfe3d43d 1px,transparent 1.4px) 0 0/24px 24px,#e8f3eb}
+.whatsapp-app-bubble{align-self:flex-start;max-width:85%;padding:9px 12px;background:#fff;border-radius:5px 15px 15px 15px;box-shadow:0 2px 7px #075e540d;font-size:11px;color:#5d6e63;line-height:1.4}
+.whatsapp-app-compose{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 6px 6px 15px;background:#fff;border:1px solid #e0e9e2;border-radius:999px;color:#174c32;font-size:13px;font-weight:650;box-shadow:0 3px 9px #075e540c}
+.whatsapp-app-send{display:grid;place-items:center;flex:none;width:35px;height:35px;border-radius:50%;background:#25d366;color:#fff;font-size:17px;padding-left:2px;box-shadow:0 3px 10px #1eaa5152;transition:transform .3s,background .3s}
+.direct-contact>a.whatsapp-app:hover,.direct-contact>a.whatsapp-app:focus-visible{background:#e8f3eb;border-color:#8ed5a4;color:#173d2b;box-shadow:0 16px 32px #075e5428;transform:translateY(-3px);animation-play-state:paused}
+.direct-contact>a.whatsapp-app:hover .whatsapp-app-send,.direct-contact>a.whatsapp-app:focus-visible .whatsapp-app-send{background:#18b957;transform:scale(1.1) rotate(-12deg)}
+@keyframes whatsapp-breathe{0%,100%{box-shadow:0 9px 26px #075e5416,0 0 0 0 #25d36600}50%{box-shadow:0 13px 29px #075e5425,0 0 0 8px #25d36616}}
 @media(max-width:760px){header{height:118px}.brand{width:108px;height:112px}.brand-art{height:102px}}
+@media(prefers-reduced-motion:reduce){.direct-contact>a.whatsapp-app{animation:none}}
