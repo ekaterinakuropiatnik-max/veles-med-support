@@ -77,3 +77,48 @@ body{font-family:Inter,Arial,sans-serif}button,input,select,textarea{font-family
 }
 @keyframes logo-mobile-lustre{0%,100%{filter:brightness(1) saturate(1)}50%{filter:brightness(1.2) saturate(1.22) contrast(1.04)}}
 @media(prefers-reduced-motion:reduce){.brand .brand-art img,.brand-art::before,.brand-reflection{animation:none!important}}
+
+/* Client copy, restrained teal accents, and complete business footer. */
+:root{--client-teal:#557a89;--client-teal-deep:#426a79;--client-teal-light:#edf4f6;--focus:#557a89}
+header{height:120px}.brand{width:112px;height:114px}.brand-art{height:106px}
+.intro .eyebrow{color:#557a89;font-size:11px;font-weight:600;letter-spacing:1.1px;text-transform:none}
+.intro h1{margin-bottom:23px}
+.intro-copy h2{font-size:14px;font-weight:650;line-height:1.5;letter-spacing:-.15px;margin:21px 0 7px;color:#2f4148}
+.intro-copy h2:first-child{margin-top:0}
+.intro-copy p{margin:0;color:#687983}
+.direct-contact{margin-top:29px}
+.direct-contact h2{color:#4c6672}
+.submit,.header-contact,.site-menu .menu-login-button{background:linear-gradient(135deg,#648b99,#426a79);color:#fff;box-shadow:0 9px 25px #426a7929,inset 0 1px 1px #ffffff43,inset 0 -8px 18px #183b4826}
+.submit:hover,.submit:focus-visible,.header-contact:hover,.header-contact:focus-visible,.site-menu .menu-login-button:hover,.site-menu .menu-login-button:focus-visible{background:linear-gradient(135deg,#7299a6,#4b7585);color:#fff;box-shadow:0 14px 32px #426a7938,inset 0 1px 1px #ffffff45}
+.submit:active,.header-contact:active{box-shadow:0 5px 14px #426a7926}
+.direct-contact>a{background:#f9fbfc;border-color:#e4ecef;color:#2d4650}
+.direct-contact>a:hover,.direct-contact>a:focus-visible{border-color:#557a8960;color:#426a79;box-shadow:0 10px 25px #426a791a}
+.contact-icon,.direct-contact>a:hover .contact-icon{background:linear-gradient(135deg,#648b99,#426a79);color:#fff}
+.contact-arrow,.direct-contact>a:hover .contact-arrow{color:#557a89}
+.lock-icon{background:#edf4f6;color:#557a89}
+.eyebrow,.help-link span,.help-link:hover span,.info-contacts,.privacy-link,.dialog-support{color:#557a89}
+.site-menu button{color:#426a79}.site-menu button:hover{background:#edf4f6}
+.site-menu .menu-login-prompt p{color:#5f7580}
+.menu-toggle,.quiet-button{color:#426a79;border-color:#dce7eb}
+.menu-toggle:hover,.quiet-button:hover{background:#edf4f6;border-color:#c0d4dc}
+.booking-grid>button.chosen{background:linear-gradient(135deg,#648b99,#426a79);border-color:#426a79}
+.calendar-legend i{background:#557a89}.selected-days li button{background:#edf4f6;color:#426a79}
+.consent input{accent-color:#557a89}
+input:focus,select:focus,textarea:focus{border-color:#7398a5;box-shadow:0 0 0 4px #557a8920}
+.delivery-mark{background:linear-gradient(135deg,#648b99,#426a79);box-shadow:0 12px 26px #426a792a}
+.dialog-close:hover,.dialog-close:focus-visible{color:#426a79;background:#e6f0f3}
+.site-footer{align-items:flex-start;gap:28px;font-size:10px;color:#657780}
+.footer-business{display:flex;flex-direction:column;gap:6px;line-height:1.5}
+.footer-business strong{font-size:11px;font-weight:650;color:#384e58}
+.footer-links{display:flex;flex-direction:column;align-items:flex-end;gap:10px;white-space:nowrap}
+.footer-links a:hover{color:#426a79}
+@media(max-width:760px){header{height:104px}.brand{height:100px;width:99px}.brand-art{height:89px}.intro-copy h2{font-size:13px;margin-top:17px}.intro-copy p{font-size:12px}.direct-contact{margin-top:27px}.site-footer{flex-direction:column;gap:15px}.footer-links{align-items:flex-start;gap:8px}}
+.login-card h2{margin:0 0 28px}
+.portal-password{position:relative}
+.portal-password input{width:100%;padding-right:55px}
+.portal-password button{position:absolute;right:10px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:38px;height:38px;border:0;border-radius:11px;background:transparent;color:#557a89}
+.portal-password button:hover{background:#e4edf0;color:#2d5261}
+.demo-note{font-size:11px;line-height:1.6;color:#829098;text-align:center;margin:16px 0 0}
+.request-contact-fields{border-bottom:1px solid #e5edef;padding-bottom:22px;margin-bottom:25px}
+.request-contact-fields h3{font-size:14px;font-weight:600;color:#405b67;margin:2px 0 20px}
+.request-contact-fields input{width:100%}
