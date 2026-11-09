@@ -12,10 +12,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{font-family:Inter,Arial,sans-serif;color:#26353b;background:#fff;font-synthesis:none}*{box-sizing:border-box}body{margin:0}a{color:#426a79;text-underline-offset:3px}a:hover{color:#263f48}.wrap{max-width:930px;margin:auto;padding:0 26px}header{border-bottom:1px solid #e7edef}.head{height:104px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{display:block;width:89px;height:89px;object-fit:contain}.back{display:inline-flex;align-items:center;gap:10px;text-decoration:none;border:1px solid #dbe8ec;border-radius:999px;padding:12px 19px;font-size:13px;font-weight:600;transition:background .2s,transform .2s}.back:hover{background:#edf4f6;transform:translateY(-2px)}main{padding-top:66px;padding-bottom:80px}.eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;color:#557a89;text-transform:uppercase}h1{font-size:clamp(36px,6vw,58px);font-weight:500;line-height:1.1;letter-spacing:-2.3px;margin:16px 0 22px}h2{font-size:22px;font-weight:600;letter-spacing:-.6px;margin:41px 0 12px}p,li{font-size:15px;line-height:1.8;color:#62727b}p{margin:0 0 16px}ul{padding-left:23px;margin:8px 0 17px}li{margin:5px 0}.lead{font-size:17px;max-width:700px}.notice{background:#f2f7f8;border:1px solid #e3edef;border-radius:20px;padding:23px 27px;margin:36px 0}.notice p{margin:0}.contact{display:inline-flex;margin-top:3px;font-weight:600}.foot{border-top:1px solid #e7edef;padding:28px 0 35px;color:#72818a;font-size:12px}.foot .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}a:focus-visible{outline:3px solid #557a89;outline-offset:4px}@media(max-width:600px){.head{height:93px}.brand img{width:78px;height:78px}main{padding-top:43px;padding-bottom:55px}h2{font-size:19px;margin-top:34px}.back{font-size:12px;padding:10px 13px}}
-  </style>
+  
+.logo-shine{position:relative;display:inline-block;flex-shrink:0;isolation:isolate;overflow:hidden;vertical-align:middle;background:#fff;transform:translateZ(0)}
+.logo-shine::after{content:"";position:absolute;inset:-25% -80%;z-index:4;pointer-events:none;background:linear-gradient(112deg,transparent 38%,rgba(190,231,245,.1) 43%,rgba(255,255,255,.85) 49%,rgba(255,255,255,.96) 51%,rgba(197,240,221,.22) 57%,transparent 64%);animation:veles-shine-sweep 4.5s ease-in-out infinite;will-change:transform}
+.logo-shine img,.brand .logo-shine img{display:block;animation:veles-shine-glow 4.5s ease-in-out infinite;mix-blend-mode:normal}
+.brand-art.logo-shine::before,.logo-shine .brand-reflection{display:none}
+@keyframes veles-shine-sweep{0%{transform:translate3d(-48%,0,0);opacity:.2}45%{opacity:.8}100%{transform:translate3d(48%,0,0);opacity:.2}}
+@keyframes veles-shine-glow{0%,100%{filter:brightness(1) saturate(1)}50%{filter:brightness(1.15) saturate(1.08)}}
+@media(prefers-reduced-motion:reduce){.logo-shine::after,.logo-shine img,.brand .logo-shine img{animation:none!important}.logo-shine::after{opacity:.18;transform:translateX(10%)}.logo-shine img{filter:brightness(1.06)}}
+</style>
 </head>
 <body>
-  <header><div class="wrap head"><a class="brand" href="./" aria-label="Zur Startseite"><img src="./logo.png" alt="VELES MED SUPPORT"></a><a class="back" href="./">← Zur Startseite</a></div></header>
+  <header><div class="wrap head"><a class="brand" href="./" aria-label="Zur Startseite"><span class="logo-shine"><img src="./logo.png" alt="VELES MED SUPPORT"></span></a><a class="back" href="./">← Zur Startseite</a></div></header>
   <main class="wrap">
     <span class="eyebrow">VELES MED SUPPORT</span>
     <h1>Datenschutzerklärung</h1>
