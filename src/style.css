@@ -153,3 +153,5 @@ header{height:136px}.brand{width:130px;height:130px}.brand-art{height:122px}
 @media(prefers-reduced-motion:reduce){.logo-shine::after{animation-duration:9s!important}}
 
 body{background:radial-gradient(ellipse at 10% 5%,#eaf0f3a6,transparent 48%),radial-gradient(ellipse at 95% 80%,#e7eded80,transparent 45%),#fafbfc;background-attachment:fixed}.staff-card,.specialist-calendar,.request-details,.time-panel{background:#ffffffd9}
+
+.profession-list{display:grid;gap:18px;max-width:900px}.profession-card{width:100%;min-height:112px;text-align:left}.profession-card .staff-card-text strong{font-size:clamp(17px,2vw,23px);line-height:1.4}.profession-card .staff-card-text small{margin-top:8px}@media(max-width:600px){.profession-card{padding:20px 16px;gap:14px}.profession-card .staff-avatar{width:42px;height:48px}.profession-card .staff-card-text strong{font-size:16px}}
