@@ -151,3 +151,5 @@ header{height:136px}.brand{width:130px;height:130px}.brand-art{height:122px}
 .logo-shine::after{inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.08) 43%,rgba(255,255,255,.88) 49%,rgba(255,255,255,.34) 54%,transparent 64%);background-size:300% 100%;background-repeat:no-repeat;-webkit-mask-image:url('/logo-art.svg');mask-image:url('/logo-art.svg');-webkit-mask-size:contain;mask-size:contain;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;transform:none!important;opacity:.85!important;animation:veles-contour-shine 5.5s ease-in-out infinite!important;will-change:background-position}
 @keyframes veles-contour-shine{0%{background-position:100% 0}100%{background-position:0% 0}}
 @media(prefers-reduced-motion:reduce){.logo-shine::after{animation-duration:9s!important}}
+
+body{background:radial-gradient(ellipse at 10% 5%,#eaf0f3a6,transparent 48%),radial-gradient(ellipse at 95% 80%,#e7eded80,transparent 45%),#fafbfc;background-attachment:fixed}.staff-card,.specialist-calendar,.request-details,.time-panel{background:#ffffffd9}
