@@ -20,10 +20,17 @@
 @keyframes veles-shine-sweep{0%{transform:translate3d(-48%,0,0);opacity:.2}45%{opacity:.8}100%{transform:translate3d(48%,0,0);opacity:.2}}
 @keyframes veles-shine-glow{0%,100%{filter:brightness(1) saturate(1)}50%{filter:brightness(1.15) saturate(1.08)}}
 @media(prefers-reduced-motion:reduce){.logo-shine::after,.logo-shine img,.brand .logo-shine img{animation:none!important}.logo-shine::after{opacity:.18;transform:translateX(10%)}.logo-shine img{filter:brightness(1.06)}}
+
+/* Shape-clipped sheen: transparent paper and no mobile filter animation. */
+.logo-shine,.brand-art.logo-shine,.admin-logo .logo-shine{background:transparent!important;isolation:auto;transform:none;overflow:visible}
+.logo-shine img,.brand .logo-shine img,.admin-logo .logo-shine img{background:transparent!important;animation:none!important;filter:none!important;mix-blend-mode:normal}
+.logo-shine::after{inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.08) 43%,rgba(255,255,255,.88) 49%,rgba(255,255,255,.34) 54%,transparent 64%);background-size:300% 100%;background-repeat:no-repeat;-webkit-mask-image:url('./logo-art.svg');mask-image:url('./logo-art.svg');-webkit-mask-size:contain;mask-size:contain;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;transform:none!important;opacity:.85!important;animation:veles-contour-shine 5.5s ease-in-out infinite!important;will-change:background-position}
+@keyframes veles-contour-shine{0%{background-position:100% 0}100%{background-position:0% 0}}
+@media(prefers-reduced-motion:reduce){.logo-shine::after{animation-duration:9s!important}}
 </style>
 </head>
 <body>
-  <header><div class="wrap head"><a class="brand" href="./" aria-label="Zur Startseite"><span class="logo-shine"><img src="./logo.png" alt="VELES MED SUPPORT"></span></a><a class="back" href="./">← Zur Startseite</a></div></header>
+  <header><div class="wrap head"><a class="brand" href="./" aria-label="Zur Startseite"><span class="logo-shine"><img src="./logo-art.svg" alt="VELES MED SUPPORT"></span></a><a class="back" href="./">← Zur Startseite</a></div></header>
   <main class="wrap">
     <span class="eyebrow">VELES MED SUPPORT</span>
     <h1>Datenschutzerklärung</h1>
